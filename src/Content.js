@@ -1,16 +1,9 @@
-import React from "react";
-import AppContext from "./appContext";
+import React, { useContext } from "react";
+import LocaleContext from "./LocaleContext";
 
-class Content extends React.Component {
-  render() {
-    return (
-      <AppContext.Consumer>
-        {context => (
-          <h2>{context.state.localeObj && context.state.localeObj.content}</h2>
-        )}
-      </AppContext.Consumer>
-    );
-  }
+const Content = () => {
+  const context = useContext(LocaleContext)
+  return <h2>{context.localeObj.content}</h2>;
 }
 
 export default Content;

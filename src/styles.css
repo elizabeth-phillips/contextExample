@@ -8,14 +8,9 @@
   margin-bottom: 8px;
 }
 
-.labels {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 700;
-}
-
 .light {
   color: black;
-  background-color: rgb(253, 229, 229);
+  background-color: rgb(251, 251, 251);
 }
 
 .dark {
